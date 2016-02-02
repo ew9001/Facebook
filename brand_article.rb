@@ -139,7 +139,7 @@ def useFacebook
 			
 			#$b.button(:text =>"Share Link").click
 		end
-$b.screenshot.save Time.now.utc.iso8601<<".png"
+$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 end
 
 

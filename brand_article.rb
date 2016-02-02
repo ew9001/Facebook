@@ -133,8 +133,8 @@ def useFacebook
 		sleep 10
 
 
-		$b.window(:title => "Facebook").use do
-			puts $b.url
+		#$b.window(:title => "Facebook").use do
+			#puts $b.url
 			sleep 2
 			$b.screenshot.save Time.now.utc.iso8601<<".png"
 			#$b.button(:text =>"Share Link").click

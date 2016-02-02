@@ -130,11 +130,11 @@ def useFacebook
 		sleep 5
     $b.element(:css => "i.fa.fa-facebook").click
 
-		sleep 10
+		sleep 15
 
 
 		
-$b.screenshot.save Time.now.utc.iso8601<<".png"
+$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 end
 
 

@@ -60,7 +60,6 @@ def useTwitter
 
 
 	sleep 5
-	$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
     $b.element(:css => "i.fa.fa-twitter").click
 
 	sleep 5
@@ -134,8 +133,13 @@ def useFacebook
 		sleep 10
 
 
-		
-
+		$b.window(:title => "Post to Facebook").use do
+			puts $b.url
+			sleep 2
+			
+			#$b.button(:text =>"Share Link").click
+		end
+$b.screenshot.save Time.now.utc.iso8601<<".png"
 end
 
 

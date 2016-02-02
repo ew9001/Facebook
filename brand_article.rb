@@ -130,7 +130,7 @@ def useFacebook
 		sleep 5
     $b.element(:css => "i.fa.fa-facebook").click
 
-		sleep 15
+		sleep 25
 
 
 		

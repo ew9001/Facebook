@@ -135,11 +135,12 @@ def useFacebook
 
 		$b.window(:title => "Post to Facebook").use do
 			puts $b.url
-			sleep 2
+			sleep 5
 			
 			#$b.button(:text =>"Share Link").click
+			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 		end
-$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
+
 end
 
 

@@ -137,8 +137,9 @@ def useFacebook
 			puts $b.url
 			sleep 5
 			
-			#$b.button(:text =>"Share Link").click
+			
 			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
+			$b.button(:text =>"Post to Facebook").click
 		end
 
 end

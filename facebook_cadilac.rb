@@ -2,7 +2,6 @@ require 'watir-webdriver'
 require 'webdriver-user-agent'
 require 'csv'
 require 'watir-scroll'
-require 'appium_lib'
 require 'time'
 
 

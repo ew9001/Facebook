@@ -2,8 +2,6 @@ require 'watir-webdriver'
 require 'webdriver-user-agent'
 require 'csv'
 require 'watir-scroll'
-require 'mechanize'
-require 'appium_lib'
 require 'time'
 
 
@@ -176,7 +174,7 @@ puts loginFacebook('pkt_zdesjro_qa@tfbnw.net','xswqaz')
 #puts loginTwitter('pkt_qa','p@blicis!')
 #puts loginGooglePlus('tester96010001@gmail.com','p@blicis!')
 
-csv_text = File.read('cadilac.csv')
+csv_text = File.read('danny.csv')
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|  
 sleep 4

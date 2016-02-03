@@ -32,7 +32,7 @@ end
 
 puts setupBrowserStack
 
-
+i=0;
 csv_text = File.read('url.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|  
@@ -52,9 +52,10 @@ sleep 5
 puts loc1
 
 $b.window.resize_to(loc1, loc2)
-
+i+=1
 sleep 2
-$b.screenshot.save loc3<<Time.now.utc.iso8601<<".png"
+
+$b.screenshot.save <<i<<"_"<<loc3<<".png"
 
 
 sleep 2

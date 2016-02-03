@@ -54,7 +54,7 @@ puts loc1
 $b.window.resize_to(loc1, loc2)
 
 sleep 2
-$b.screenshot.save loc3<<".png"
+$b.screenshot.save loc3<<Time.now.utc.iso8601<<".png"
 
 
 sleep 2

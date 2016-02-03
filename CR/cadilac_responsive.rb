@@ -55,7 +55,18 @@ $b.window.resize_to(loc1, loc2)
 i+=1
 sleep 2
 
-$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
+$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Today"<<".png"
+
+$b.select_list(:id, "js-weekly").select_value("Last 30 days")
+sleep 5
+$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 7 days"<<".png"
+
+
+$b.select_list(:id, "js-monthly").select_value("Last 30 days")
+sleep 5
+$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 30 days"<<".png"
+
+sleep 2
 
 
 sleep 2

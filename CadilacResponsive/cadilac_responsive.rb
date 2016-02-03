@@ -46,7 +46,7 @@ end
 puts setupBrowserStack
 
 
-csv_text = File.read('responsive.csv',encoding: "iso-8859-1:UTF-8")
+csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|  
 sleep 4

@@ -30,21 +30,15 @@ end
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 puts setupBrowserStack
 
+
+csv_text = File.read('url.csv',encoding: "iso-8859-1:UTF-8")
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|  
+sleep 4
+url= "#{row['url']}"
+$b.goto url
 
 csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
@@ -70,6 +64,7 @@ sleep 2
 
 end
 
+end
 
 
 

@@ -55,7 +55,7 @@ $b.window.resize_to(loc1, loc2)
 i+=1
 sleep 2
 
-$b.screenshot.save <<i<<"_"<<loc1<<"x"<<loc2<<".png"
+$b.screenshot.save i<<"_"<<loc1<<"x"<<loc2<<".png"
 
 
 sleep 2

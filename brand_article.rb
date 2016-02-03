@@ -177,7 +177,7 @@ puts loginFacebook('pkt_zdesjro_qa@tfbnw.net','xswqaz')
 puts loginTwitter('pkt_qa','p@blicis!')
 #puts loginGooglePlus('tester96010001@gmail.com','p@blicis!')
 
-csv_text = File.read('danny.csv')
+csv_text = File.read('danny.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|  
 sleep 4

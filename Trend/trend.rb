@@ -58,14 +58,14 @@ puts "Scroll to center"
 
 	 $b.element(:css => "div.js-trending-current-range.dropdown-current-range").click
 	 sleep 2
-    $b.(:id, "js-weekly").click
+    $b.element(:id, "js-weekly").click
 sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 7 days"<<".png"
 
 
 	 $b.element(:css => "div.js-trending-current-range.dropdown-current-range").click
 	 sleep 2
-    $b.(:id, "js-monthly").click
+    $b.element(:id, "js-monthly").click
 
 
 sleep 5

@@ -52,6 +52,7 @@ sleep 2
 
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Today"<<".png"
 sleep 2
+puts "Scroll to center"
 	$b.scroll.to :center 
 	sleep 2
 $b.select_list(:id, "js-weekly").select_value("Last 30 days")

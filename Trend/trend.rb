@@ -55,12 +55,19 @@ sleep 2
 puts "Scroll to center"
 	$b.scroll.to :center 
 	sleep 2
-$b.select_list(:id, "js-weekly").select_value("Last 30 days")
+
+	 $b.element(:css => "div.js-trending-current-range.dropdown-current-range").click
+	 sleep 2
+    $b.(:id, "js-weekly").click
 sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 7 days"<<".png"
 
 
-$b.select_list(:id, "js-monthly").select_value("Last 30 days")
+	 $b.element(:css => "div.js-trending-current-range.dropdown-current-range").click
+	 sleep 2
+    $b.(:id, "js-monthly").click
+
+
 sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 30 days"<<".png"
 

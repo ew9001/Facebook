@@ -25,7 +25,7 @@ $b= Watir::Browser.new(:remote,
   :desired_capabilities => caps)
 
 
-$b.goto "http://www.daregreatly.com/explore/culture/visual-art/latoya-ruby-frazier"
+$b.goto "http://www.daregreatly.com/"
 end 
 
 
@@ -33,12 +33,7 @@ end
 puts setupBrowserStack
 
 i=0;
-csv_text = File.read('url.csv',encoding: "iso-8859-1:UTF-8")
-csv = CSV.parse(csv_text, :headers => true)
-csv.each do |row|  
-sleep 4
-url= "#{row['url']}"
-$b.goto url
+
 
 csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
@@ -71,7 +66,7 @@ sleep 2
 
 
 
-end
+
 
 end
 

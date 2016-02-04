@@ -39,7 +39,7 @@ csv.each do |row|
 sleep 4
 url= "#{row['url']}"
 $b.goto url
-
+$b.scroll.to :center 
 csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|  
@@ -57,12 +57,12 @@ sleep 2
 
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Today"<<".png"
 
-$b.select_list(:id, "js-weekly").select_value("Last 30 days")
+$b.select_list(:css => "js-weekly").select_value("Last 30 days")
 sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 7 days"<<".png"
 
 
-$b.select_list(:id, "js-monthly").select_value("Last 30 days")
+$b.select_list(:css => "js-monthly").select_value("Last 30 days")
 sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<"Last 30 days"<<".png"
 

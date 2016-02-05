@@ -38,9 +38,7 @@ i=0;
 
 $b.window.resize_to(1157, 937)
 
-sleep 2
 
- $b.element(:css => "a.header-dropdown-current-choice").click
 	 sleep 2
 
 
@@ -59,6 +57,9 @@ $b.window.resize_to(loc1, loc2)
 i+=1
 sleep 2
 
+
+ $b.element(:css => "a.header-dropdown-current-choice").click
+ sleep 2
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
 
 

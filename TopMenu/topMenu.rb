@@ -34,39 +34,27 @@ puts setupBrowserStack
 
 i=0;
 
+set = 50
 
 
-$b.window.resize_to(1157, 937)
+$b.window.resize_to(605, 937)
 
 
 	 sleep 2
 
+while set > 501 do 
 
-csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
-csv = CSV.parse(csv_text, :headers => true)
-csv.each do |row|  
-sleep 4
-loc1= "#{row['sizeA']}"
-loc2= "#{row['sizeB']}"
-loc3= "#{row['device']}"
-
-sleep 5
-puts loc1
-
-$b.window.resize_to(loc1, loc2)
-i+=1
+$b.window.resize_to(set, 937)
 sleep 2
-
-
  $b.element(:css => "a.header-dropdown-current-choice").click
  sleep 2
-$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
+$b.screenshot.save i.to_s<<"_"<<set<<"x"<<l937<<".png"
 
-
-sleep 2
-
+set+=50
 
 end
+
+
 
 
 

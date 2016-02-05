@@ -42,7 +42,7 @@ $b.window.resize_to(605, 937)
 
 	 sleep 2
 
-while set > 501 do 
+while set < 501 do 
 
 $b.window.resize_to(set, 937)
 sleep 2

@@ -36,20 +36,25 @@ i=0;
 
 set = 50
 
-
 $b.window.resize_to(605, 937)
+
 
 
 	 sleep 2
 
-while set < 501 do 
-puts "Inside loop "<<set
-$b.window.resize_to(605+set, 937)
-sleep 2
+csv_text = File.read('cadilac_responsive.csv',encoding: "iso-8859-1:UTF-8")
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|  
+sleep 4
+loc1= "#{row['sizeA']}"
+loc2= "#{row['sizeB']}"
+loc3= "#{row['device']}"
+
+$b.window.resize_to(loc1,loc2)
+
  $b.element(:css => "a.header-dropdown-current-choice").click
  sleep 2
- temp = 605+set
-$b.screenshot.save i.to_s<<"_"<<temp.to_s<<"x"<<"937"<<".png"
+$b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
 
 set+=50
 

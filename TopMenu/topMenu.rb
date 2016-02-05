@@ -51,7 +51,7 @@ loc2= "#{row['sizeB']}"
 loc3= "#{row['device']}"
 
 $b.window.resize_to(loc1,loc2)
-
+sleep 5
  $b.element(:css => "a.header-dropdown-current-choice").click
  sleep 5
 $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"

@@ -48,7 +48,7 @@ $b.window.resize_to(605+set, 937)
 sleep 2
  $b.element(:css => "a.header-dropdown-current-choice").click
  sleep 2
-$b.screenshot.save i.to_s<<"_"<<set<<"x"<<937<<".png"
+$b.screenshot.save i.to_s<<"_"<<605+set<<"x"<<"937"<<".png"
 
 set+=50
 

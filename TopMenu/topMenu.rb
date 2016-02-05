@@ -43,7 +43,7 @@ $b.window.resize_to(605, 937)
 	 sleep 2
 
 while set < 501 do 
-
+puts "Inside loop "<<set
 $b.window.resize_to(set, 937)
 sleep 2
  $b.element(:css => "a.header-dropdown-current-choice").click

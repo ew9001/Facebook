@@ -142,7 +142,9 @@ def useFacebook
 			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 			sleep 2
 			$b.window(:title => "Post to Facebook").close
-			sleep 1
+			sleep 5
+			b.send_keys :enter
+			sleep 5
 			#$b.button(:text =>"Cancel").click
 		end
 
@@ -177,7 +179,7 @@ $b.screenshot.save Time.now.utc.iso8601<<".png"
 end
 puts setupBrowserStack
 puts loginFacebook('pkt_zdesjro_qa@tfbnw.net','xswqaz')
-puts loginTwitter('pkt_qa','p@blicis!')
+#puts loginTwitter('pkt_qa','p@blicis!')
 #puts loginGooglePlus('tester96010001@gmail.com','p@blicis!')
 
 csv_text = File.read('staging.csv',encoding: "iso-8859-1:UTF-8")

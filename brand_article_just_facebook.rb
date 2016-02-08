@@ -141,7 +141,7 @@ def useFacebook
 			
 			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 			sleep 2
-			$b.window(:title => "Post a Tweet on Twitter").close
+			$b.window(:title => "Post to Facebook").close
 			sleep 1
 			#$b.button(:text =>"Cancel").click
 		end

@@ -141,7 +141,7 @@ def useFacebook
 			
 			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
 			sleep 2
-			$b.button(:text =>"Cancel").click
+			#$b.button(:text =>"Cancel").click
 		end
 
 end

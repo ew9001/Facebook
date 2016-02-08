@@ -140,11 +140,11 @@ def useFacebook
 			
 			
 			$b.screenshot.save Time.now.utc.iso8601<<"_facebook.png"
-			sleep 2
-			$b.window(:title => "Post to Facebook").close
+			sleep 5
 			
-			sleep 10
-			$b.button(:text =>"Leave Page").click
+			
+			
+			$b.button(:text =>"Post to Facebook").click
 			sleep 5
 		end
 

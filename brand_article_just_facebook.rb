@@ -17,7 +17,7 @@ caps = WebDriver::Remote::Capabilities.new
 caps[:os] = "Windows"
 caps[:name] = "Watir WebDriver"
 caps[:browser] = "firefox"
-caps[:browser_version] = "20"
+caps[:browser_version] = "38"
 caps["browserstack.debug"] = "true"
 
 $b= Watir::Browser.new(:remote,

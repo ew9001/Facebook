@@ -144,8 +144,11 @@ def useFacebook
 			
 			
 			
-			$b.button(:text =>"Post to Facebook").click
+			$b.button(:text =>"Cancel").click
 			sleep 5
+			$b.alert.exists?
+			sleep 2
+			$b.alert.ok
 		end
 
 end

@@ -145,7 +145,7 @@ def useFacebook
 			
 			
 			$b.button(:text =>"Post to Facebook").click
-			sleep 5
+			sleep 25
 		end
 
 end

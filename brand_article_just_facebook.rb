@@ -14,8 +14,8 @@ def setupBrowserStack
 include Selenium
 
 caps = WebDriver::Remote::Capabilities.new
-caps['browser'] = 'IE'
-caps['browser_version'] = '10.0'
+caps['browser'] = 'Firefox'
+caps['browser_version'] = '43.0'
 caps['os'] = 'Windows'
 caps['os_version'] = '7'
 caps['resolution'] = '1024x768'

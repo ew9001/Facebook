@@ -14,11 +14,10 @@ def setupBrowserStack
 include Selenium
 
 caps = WebDriver::Remote::Capabilities.new
-caps['browser'] = 'Firefox'
-caps['browser_version'] = '43.0'
-caps['os'] = 'Windows'
-caps['os_version'] = '7'
-caps['resolution'] = '1024x768'
+caps[:os] = "Windows"
+caps[:name] = "Watir WebDriver"
+caps[:browser] = "firefox"
+caps[:browser_version] = "20"
 caps["browserstack.debug"] = "true"
 
 $b= Watir::Browser.new(:remote,

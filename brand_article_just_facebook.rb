@@ -147,7 +147,7 @@ def useFacebook
 			$b.button(:text =>"Cancel").click
 			sleep 5
 			$b.alert.exists?
-			sleep 2hf
+			sleep 2
 			$b.alert.ok
 		end
 

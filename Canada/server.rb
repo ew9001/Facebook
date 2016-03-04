@@ -23,7 +23,7 @@ caps["browserstack.debug"] = "true"
 $b= Watir::Browser.new(:remote,
   :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub",
   :desired_capabilities => caps)
-
+$counter=0
 
 end 
 
@@ -56,11 +56,11 @@ sleep 2
 
 $b.scroll.to :center 
 		sleep 5
-		$b.screenshot.save Time.now.utc.iso8601<<".png"
+		$b.screenshot.save "server #"<<$b.title<<"_"<<$counter.to_s<<".png"
 		sleep 5
     $b.element(:text=> "Cadillac.com/CT6.").click
-
-$b.screenshot.save Time.now.utc.iso8601<<".png"
+sleep 5
+$b.screenshot.save "title"<<$b.title<<$counter.to_s<<".png"
 
 
 sleep 2

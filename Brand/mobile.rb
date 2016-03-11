@@ -7,7 +7,6 @@ caps = WebDriver::Remote::Capabilities.new
 caps[:browserName] = 'android'
 caps[:platform] = 'ANDROID'
 caps['device'] = 'Samsung Galaxy S3'
-caps['device'] = 'iPhone 5'
 caps["browserstack.debug"] = "true"
 caps["browserstack.local"] = "true"
 

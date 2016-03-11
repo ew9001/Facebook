@@ -9,6 +9,7 @@ caps[:platform] = 'ANDROID'
 caps['device'] = 'Samsung Galaxy S3'
 caps["browserstack.debug"] = "true"
 caps["browserstack.local"] = "true"
+caps['acceptSslCerts'] = 'true'
 
 browser = Watir::Browser.new(:remote,
   :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub",

@@ -15,7 +15,7 @@ browser = Watir::Browser.new(:remote,
   :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub",
   :desired_capabilities => caps)
 
-browser.goto "http://author.crestca.pgsitecore.com/en-ca/products/toothpaste?#viewtype:gridview/facets:collection=crest-sensi/category:toothpaste"
+browser.goto "http://author.crestca.pgsitecore.com/en-ca"
 
 puts browser.title
 browser.screenshot.save browser.title<<".png"

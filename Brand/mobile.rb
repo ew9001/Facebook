@@ -8,7 +8,7 @@ caps[:browserName] = 'iPhone'
 caps[:platform] = 'MAC'
 caps['device'] = 'iPhone 5'
 caps["browserstack.debug"] = "true"
-caps["browserstack.debug"] = "local"
+caps["browserstack.local"] = "true"
 
 browser = Watir::Browser.new(:remote,
   :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub",

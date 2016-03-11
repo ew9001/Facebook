@@ -4,8 +4,9 @@ require 'watir-webdriver'
 include Selenium
 
 caps = WebDriver::Remote::Capabilities.new
-caps[:browserName] = 'iPhone'
-caps[:platform] = 'MAC'
+caps[:browserName] = 'android'
+caps[:platform] = 'ANDROID'
+caps['device'] = 'Samsung Galaxy S3'
 caps['device'] = 'iPhone 5'
 caps["browserstack.debug"] = "true"
 caps["browserstack.local"] = "true"

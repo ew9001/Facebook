@@ -9,7 +9,7 @@ require 'time'
 
  
 
-def setup$bStack
+def setupbrowserStack
 
 include Selenium
 
@@ -30,7 +30,7 @@ end
 
 
 
-puts setup$bStack
+puts setupbrowserStack
 
 i=0;
 csv_text = File.read('url.csv',encoding: "iso-8859-1:UTF-8")

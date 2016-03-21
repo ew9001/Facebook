@@ -54,32 +54,32 @@ puts loc1
 $b.window.resize_to(loc1, loc2)
 i+=1
 sleep 2
- browserelement(:css, "#242 > div.back > div.main-copy > div.the-dare").click
+ browser.element(:css, "#242 > div.back > div.main-copy > div.the-dare").click
  $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
  i+1
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#166 > div.back").click
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#165 > div.back > div.main-copy > div.the-dare").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#166 > div.back").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#165 > div.back > div.main-copy > div.the-dare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
  i+1
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#167 > div.back > div.main-copy > div.dontyoudare").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#167 > div.back > div.main-copy > div.dontyoudare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
  i+1
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#161 > div.back > div.main-copy > div.the-dare").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#161 > div.back > div.main-copy > div.the-dare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
  i+1
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#164 > div.back").click
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#145 > div.back").click
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#134 > div.back").click
-    browserelement(:css, "div.close-x").click
-    browserelement(:css, "#144 > div.back").click
-    browserelement(:css, "div.close-x").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#164 > div.back").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#145 > div.back").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#134 > div.back").click
+    browser.element(:css, "div.close-x").click
+    browser.element(:css, "#144 > div.back").click
+    browser.element(:css, "div.close-x").click
 
 
 

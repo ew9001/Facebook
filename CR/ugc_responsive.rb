@@ -9,19 +9,19 @@ require 'time'
 
  
 
-def setupBrowserStack
+def setup$bStack
 
 include Selenium
 
 caps = WebDriver::Remote::Capabilities.new
 caps[:os] = "Windows"
 caps[:name] = "Watir WebDriver"
-caps[:browser] = "firefox"
-caps[:browser_version] = "20"
-caps["browserstack.debug"] = "true"
+caps[:$b] = "firefox"
+caps[:$b_version] = "20"
+caps["$bstack.debug"] = "true"
 
-$b= Watir::Browser.new(:remote,
-  :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.browserstack.com/wd/hub",
+$b= Watir::$b.new(:remote,
+  :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.$bstack.com/wd/hub",
   :desired_capabilities => caps)
 
 
@@ -30,7 +30,7 @@ end
 
 
 
-puts setupBrowserStack
+puts setup$bStack
 
 i=0;
 csv_text = File.read('url.csv',encoding: "iso-8859-1:UTF-8")
@@ -54,32 +54,32 @@ puts loc1
 $b.window.resize_to(loc1, loc2)
 i+=1
 sleep 2
- browser.element(:css, "#242 > div.back > div.main-copy > div.the-dare").click
+ $b.element(:css, "#242 > div.back > div.main-copy > div.the-dare").click
  $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
- i+1
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#166 > div.back").click
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#165 > div.back > div.main-copy > div.the-dare").click
+ i+=1
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#166 > div.back").click
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#165 > div.back > div.main-copy > div.the-dare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
- i+1
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#167 > div.back > div.main-copy > div.dontyoudare").click
+ i+=1
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#167 > div.back > div.main-copy > div.dontyoudare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
- i+1
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#161 > div.back > div.main-copy > div.the-dare").click
+ i+=1
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#161 > div.back > div.main-copy > div.the-dare").click
      $b.screenshot.save i.to_s<<"_"<<loc1<<"x"<<loc2<<".png"
- i+1
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#164 > div.back").click
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#145 > div.back").click
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#134 > div.back").click
-    browser.element(:css, "div.close-x").click
-    browser.element(:css, "#144 > div.back").click
-    browser.element(:css, "div.close-x").click
+ i+=1
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#164 > div.back").click
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#145 > div.back").click
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#134 > div.back").click
+    $b.element(:css, "div.close-x").click
+    $b.element(:css, "#144 > div.back").click
+    $b.element(:css, "div.close-x").click
 
 
 

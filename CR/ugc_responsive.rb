@@ -20,7 +20,7 @@ caps[:$b] = "firefox"
 caps[:$b_version] = "20"
 caps["$bstack.debug"] = "true"
 
-$b= Watir::$b.new(:remote,
+$b= Watir::browser.new(:remote,
   :url => "http://zaqwsx1:Fs54nwmULt7BaSTosZxi@hub.$bstack.com/wd/hub",
   :desired_capabilities => caps)
 
